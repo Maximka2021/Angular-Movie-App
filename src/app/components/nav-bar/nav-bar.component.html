@@ -1,0 +1,11 @@
+<div class="main-holder">
+    <input class="search-input" name="search" placeholder="Search..." [(ngModel)]="search" (keyup)="onKeyUp()">
+    <select name="genre" class="genres" (change)="onValueChange($event)">
+        <option value="All" selected>All</option>
+        <option value="Drama">Drama</option>
+        <option value="Crime">Crime</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Horror">Horror</option>
+        <option value="Sci-Fi">Si-Fi</option>
+    </select>
+</div>

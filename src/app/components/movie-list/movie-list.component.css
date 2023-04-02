@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.movie-list-holder{
+    width: 100%;
+    height: 100vh;
+    background-position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    z-index: -2;
+}
+
+.pop-up-show{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    background-attachment: fixed;
+    display: block;
+    z-index: 2;
+}
+
+.pop-up-hide{
+    display: none;
+}

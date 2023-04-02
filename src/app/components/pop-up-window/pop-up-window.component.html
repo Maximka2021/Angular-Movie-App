@@ -1,0 +1,18 @@
+<div class="holder">
+    <button class="close-button" (click)="closeDialog()">X</button>
+    <div class="cast">
+        <p class="label">Cast:</p>
+        <p class="list" *ngFor="let actor of movieInfo.cast">{{actor}}</p>
+        <p>Director: {{movieInfo.director}}</p>
+    </div>
+    <div class="genre">
+        <p class="label">Genres:</p>
+        <p class="list" *ngFor="let genre of movieInfo.genres">{{genre}}</p>
+    </div>
+    <div class="description">
+        <p>{{movieInfo.description}}</p>
+    </div>
+    <div class="image-holder">
+        <img class="image" src="{{movieInfo.image}}">
+    </div>
+</div>

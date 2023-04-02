@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.holder{
+    width: 50%;
+    height: 75vh;
+    background-color: rgb(48, 48, 48);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    margin: 2%;
+
+}
+
+.label{
+    font-size: .9rem;
+    color: grey;
+}
+
+.cast{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    flex-wrap:wrap;
+    float: right;
+    margin: 2%;
+    padding: 1%;
+    display: flex;
+    margin-top: 10%;
+}
+
+.list{
+    padding-right: 2%;
+    padding-left: 2%;
+    color: white;
+}
+
+.genre{
+    width: 50%;
+    height: 10vh;
+    float: right;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 2%;
+    margin-top: 2%;
+    padding: 1%;
+    display: flex; 
+}
+
+.close-button{
+    width: 5%;
+    height: 5vh;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(49, 49, 49);
+    color: rgb(215, 215, 215);
+    cursor: pointer;
+    position: relative;
+    top: 2%;
+    left: 93%;
+}
+
+.close-button:hover{
+    background-color: rgb(215, 215, 215);
+    color: rgb(49, 49, 49);   
+}
+
+.description{
+    width: 50%;
+    height: 10vh;
+    margin: 2%;
+    margin-top: 1%;
+    float: right;
+    height: auto;
+    padding: 1%;
+    color: white;
+}
+
+.image-holder{
+    width: 40%;
+    height: 20vw;
+}
+
+.image{
+    width: 100%;
+    height: 20vw;
+}

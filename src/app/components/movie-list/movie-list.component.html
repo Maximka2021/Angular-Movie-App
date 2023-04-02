@@ -1,0 +1,17 @@
+<app-nav-bar
+  (onChange)="changeGenre($event)"
+  (onInputChange)="changeInput($event)"
+></app-nav-bar>
+<app-pop-up-window
+  [className]="show ? 'pop-up-show' : 'pop-up-hide'"
+  (onClose)="closeDialog()"
+  [movieInfo]="movieInfo"
+></app-pop-up-window>
+<div class="movie-list-holder">
+  <app-movie-item
+    class="movie-item"
+    *ngFor="let movie of newArr"
+    [movie]="movie"
+    (onClick)="showInfo(movie)"
+  ></app-movie-item>
+</div>
